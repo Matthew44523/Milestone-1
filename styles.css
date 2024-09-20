@@ -1,7 +1,46 @@
 div {text-align: center;}
-              
+
+p {text-align: center;}
+
+h1 {text-align: center;}
+
+h2 {text-align: center;}
+
+h3 {text-align: center;}
+
 ol {display: table; margin: 0 auto; text-align: left;}
 
 .font-Comic-Sans {font-family: 'Comic Sans MS', cursive, sans-serif;}
 
-#menu-heading {text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);}
+#text_shadow {text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);}
+
+.auto-size-image {width: 15%; height: auto;}
+
+.toc a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 255, 226); 
+    color: black;
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: rgb(222, 222, 222); 
+        color: black;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: hotpink; 
+        color: black;
+    }
+}
+
+@media print {
+    iframe {display: none}
+}
