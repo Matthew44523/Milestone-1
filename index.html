@@ -3,7 +3,10 @@
 <head>
 
     <title> Matthew Frankowski </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
 
@@ -15,123 +18,202 @@
 
 <body>
 
-    <h1 class="font-Comic-Sans" id="text_shadow"> <span style="color:blue">Matthew's Website</span> </h1>    
+    <nav class="navbar navbar-expand-lg navbar-custom" style="background-color: rgb(255, 255, 226);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Table of Contents</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToc" aria-controls="navbarToc" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarToc">
+            <ol class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#S1">Education Summary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S2">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S3">Programming Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S4">Technical Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S5">My Interests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S6">Favorite Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S7">Favorite Website</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#S8">My Projects</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </nav>
 
-<div>
-    <img src="MyPic.jpeg" class="auto-size-image"/>
-</div>
+      <h1 class="font-Comic-Sans" id="text_shadow"> <span style="color:blue">Matthew's Website</span> </h1>    
 
-    <p>Matthew Frankowski</p>
-    <p>Major: Computer Science</p>
+      <div>
+          <img src="MyPic.jpeg" class="auto-size-image"/>
+      </div>
+      
+          <p>Matthew Frankowski</p>
+          <p>Major: Computer Science</p>
+      
 
-    <h2 >Table of Contents:</h2>
-    <ol class="toc">
-        <li><a href="#S1">My Education Summary</a></li> 
-        <li><a href="#S2">My Work Experience</a></li>
-        <li><a href="#S3">My Programming Skills</a></li>
-        <li><a href="#S4">Other Technical Skills</a></li>
-        <li><a href="#S5">My Interests</a></li>
-        <li><a href="#S6">Favorite Song, Movie, and TV Show</a></li>
-        <li><a href="#S7">Favorite Website</a></li>
-        <li><a href="#S8">My Projects</a></li>
-
-    </ol>
-
-    <h2 id="S1">Education Summary:</h2>
-    <p>
-        St. John's University Bachelors of Science &emsp; Graduation: Expected May 2025 </br>
-        Xavier High School &emsp; June Graduation: 2021
-    </p>
-
-    <h2 id="S2">Work Experience:</h2>
-    <p>
-        Drefin Investments LTD &emsp; New York, NY </br>
-        Assistant Building Manager &emsp; March 2022-Present
-    </p>
-
-    <div>
-    <img src="https://photos.wikimapia.org/p/00/07/52/93/41_full.jpg" class="auto-size-image"/>
-    </div>
-
-    <h2 id="S3">Programming Skills:</h2>
-    <table style="margin: 0px auto;" border="3">
-
-        <tr>
-            <th>Programming Language</th>
-            <th>Familiarity Level</th>
-        </tr>
-        <tr>
-            <td style='text-align:center; vertical-align:middle' >Java</td>
-            <td style='text-align:center; vertical-align:middle'>Proficient</td>
-        </tr>
-        <tr>
-            <td style='text-align:center; vertical-align:middle'>Python</td>
-            <td style='text-align:center; vertical-align:middle'>Proficient</td>
-        </tr>
-        <tr>
-            <td style='text-align:center; vertical-align:middle'>C</td>
-            <td style='text-align:center; vertical-align:middle'>Familiar</td>
-        </tr>
-        <tr>
-            <td style='text-align:center; vertical-align:middle'>Ruby</td>
-            <td style='text-align:center; vertical-align:middle'>Beginner</td>
-        </tr>
-        <tr>
-            <td style='text-align:center; vertical-align:middle'>Pearl</td>
-            <td style='text-align:center; vertical-align:middle'>Beginner</td>
-        </tr>
+          <div class="container mb-5">
+            <div class="row">
+                <!-- Education Summary -->
+                <div class="col-md-6">
+                    <h2 id="S1">Education Summary:</h2>
+                    <p>
+                        St. John's University Bachelors of Science &emsp; Graduation: Expected May 2025 </br>
+                        Xavier High School &emsp; June Graduation: 2021
+                    </p>
+                </div>
         
-    </table>
+                <!-- Work Experience -->
+                <div class="col-md-6">
+                    <h2 id="S2">Work Experience:</h2>
+                    <p>
+                        Drefin Investments LTD &emsp; New York, NY </br>
+                        Assistant Building Manager &emsp; March 2022-Present
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Programming Skills -->
+                <div class="col-md-6">
+                    <h2 id="S3">Programming Skills:</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Programming Language</th>
+                                <th>Familiarity Level</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">Java</td>
+                                <td class="text-center">Proficient</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Python</td>
+                                <td class="text-center">Proficient</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">C</td>
+                                <td class="text-center">Familiar</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Ruby</td>
+                                <td class="text-center">Beginner</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Perl</td>
+                                <td class="text-center">Beginner</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Other Technical Skills -->
+                <div class="col-md-6">
+                    <h3 id="S4">Other Technical Skills:</h3>
+                    <ul>
+                        <li>Microsoft Office 365</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <h3 id="S4">Other Technical Skills:</h3>
-    <ul>
-        <li>Microsoft Office 365</li>
-        <li>SQL</li>
-    </ul>
-
-    <h2 id="S5">My Interests:</h2>
-    <p>
-        My interests and hobbies include going on bike rides, exploring NYC with my friends, and reading.
-    </p>
-
-    <h2 id="S6">Favorite Song, Movie, and TV Show </h2>
-
-    <div>
-
-    <h3>Favorite Song</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jJp3kVelU3c?si=zHFW9Ogqs_3kkbfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <h3>Favorite Movie</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/NSiAsQMBSRA?si=t-CGdsBfofpE9n5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <h3>Favorite TV Show</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uDcQbk78CSw?si=uHnBfUwC1Y3kiSTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <div class="container mt-5">
+            <h2 id="S5" class="text-center">My Interests:</h2>
+            <p class="text-center">
+                My interests and hobbies include going on bike rides, exploring NYC with my friends, and reading.
+            </p>
+        </div>
     </div>
 
-    <h2 id="S7">Favorite Websites</h2>
+    <div class="container mt-5">
+        <h2 id="S6" class="text-center">Favorite Song, Movie, and TV Show</h2>
+    
+        <div class="text-center">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h3>Favorite Movie</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/NSiAsQMBSRA?si=t-CGdsBfofpE9n5A" title="Favorite Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Favorite TV Show</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/uDcQbk78CSw?si=uHnBfUwC1Y3kiSTZ" title="Favorite TV Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+    
+            <h3>Favorite Song</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/jJp3kVelU3c?si=zHFW9Ogqs_3kkbfY" title="Favorite Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
 
-    <div><a href="https://www.instagram.com/matthew.f.21/">  My Instagram </a></div>
-    <p>This is a link to my Instagram. This is typically where I waste most of my time.</p>
+        <div class="container mt-5">
+            <h2 id="S7" class="text-center">Favorite Websites</h2>
+        
+            <div class="row">
+                <!-- Instagram Link -->
+                <div class="col-md-4">
+                    <div class="website-card">
+                        <a href="https://www.instagram.com/matthew.f.21/" target="_blank">My Instagram</a>
+                        <p>This is a link to my Instagram. This is typically where I waste most of my time.</p>
+                    </div>
+                </div>
+                
+                <!-- Google Link and Search Bar -->
+                <div class="col-md-4">
+                    <div class="website-card">
+                        <a href="https://www.google.com/" target="_blank">Google</a>
+                        <p>This is a link and form to search Google. It is one of my favorite sites because of its utility.</p>
+                        <div class="search-container">
+                            <form action="https://www.google.com/" method="get" class="d-flex">
+                                <input id="search" name="q" type="text" class="form-control me-2" placeholder="Search Google">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
-    <div><a href="https://www.reddit.com/r/stupiddovenests/"> Reddit </a></div>
-    <p>This is a link to a Reddit forum I enjoy where birds build their nests in absurd places.</p>
+                <!-- Reddit Link -->
+                <div class="col-md-4">
+                    <div class="website-card">
+                        <a href="https://www.reddit.com/r/stupiddovenests/" target="_blank">Reddit</a>
+                        <p>This is a link to a Reddit forum I enjoy where birds build their nests in absurd places.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div>
-    <a href="https://www.google.com/">  Google </a>
-    <form action="https://www.google.com/">
+        <div class="container text-center mt-5">
+            <h2 id="S8">My Projects</h2>
+            <div>
+                <a href="https://matthew44523.github.io/Milestone-1/" class="btn btn-link">Project 1</a>
+            </div>
+            <p>This is a link to my website for Project 1.</p>
+        </div>
 
-        <label> Search: </label> <input name="q" type="text">
-        <input type="Submit"> 
-    </form>
-    </div>
-
-    <p>This is a link and form to search Google. It is one of my favorite sites because of its utility.</p>
-
-    <h2 id="S8">My Projects</h2>
-    <div><a href="https://matthew44523.github.io/Milestone-1/"> Project 1 </a></div>
-    <p>This is a link to my website for Milestone 1.</p>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
